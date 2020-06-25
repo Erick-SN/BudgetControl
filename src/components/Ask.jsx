@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import PropTypes from 'prop-types';
 import Error from './Error';
 const Ask = ({ setBudget, setResiduary, setShowAsk }) => {
   const [amount, setAmount] = useState(0);
@@ -38,6 +39,12 @@ const Ask = ({ setBudget, setResiduary, setShowAsk }) => {
       </form>
     </>
   );
+};
+
+Ask.protoTypes = {
+  setBudget: PropTypes.func.isRequired,
+  setResiduary: PropTypes.func.isRequired,
+  setShowAsk: PropTypes.func.isRequired,
 };
 
 export default Ask;
