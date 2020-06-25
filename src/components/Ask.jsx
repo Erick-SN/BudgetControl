@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Error from './Error';
-const Ask = ({ setBudget, setResiduary }) => {
+const Ask = ({ setBudget, setResiduary, setShowAsk }) => {
   const [amount, setAmount] = useState(0);
   const [error, setError] = useState(false);
   const Budget = (e) => {
@@ -16,6 +16,7 @@ const Ask = ({ setBudget, setResiduary }) => {
     setError(false);
     setBudget(amount);
     setResiduary(amount);
+    setShowAsk(false);
   };
 
   return (
