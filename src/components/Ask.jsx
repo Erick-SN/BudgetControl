@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Error from './Error';
 const Ask = () => {
   const [amount, setAmount] = useState(0);
   const [error, setError] = useState(false);
@@ -18,7 +19,7 @@ const Ask = () => {
   return (
     <>
       <h2>Place your budget :D</h2>
-      {error?:null}
+      {error ? <Error message='Incorrect Budget' /> : null}
       <form onSubmit={onSubmitBudget}>
         <input
           type='number'
