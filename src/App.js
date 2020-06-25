@@ -20,7 +20,7 @@ function App() {
 
       setCreateExpense(false);
     }
-  }, [expense]);
+  }, [expense, createExpense, expenses, residuary]);
 
   return (
     <>
