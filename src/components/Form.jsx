@@ -58,7 +58,7 @@ const Form = ({ saveExpense, setCreateExpense }) => {
   );
 };
 
-Form.protoTypes = {
+Form.propTypes = {
   saveExpense: PropTypes.func.isRequired,
   setCreateExpense: PropTypes.func.isRequired,
 };

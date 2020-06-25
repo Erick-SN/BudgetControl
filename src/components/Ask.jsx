@@ -41,7 +41,7 @@ const Ask = ({ setBudget, setResiduary, setShowAsk }) => {
   );
 };
 
-Ask.protoTypes = {
+Ask.propTypes = {
   setBudget: PropTypes.func.isRequired,
   setResiduary: PropTypes.func.isRequired,
   setShowAsk: PropTypes.func.isRequired,
